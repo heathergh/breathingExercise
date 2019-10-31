@@ -1,0 +1,49 @@
+@keyframes anxietyCircle {
+    0% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+    
+    100% {
+        transform: scale(0.5)
+    }
+    
+}
+
+body {
+    background: linear-gradient(to bottom, #33ccff 0%, #FFFFFF 100%);
+}
+
+h1,
+p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+}
+
+.anxiety-circle-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 200px;
+}
+
+.anxiety-circle {
+    align-self: center;
+    animation: anxietyCircle 10s linear infinite;
+    background: radial-gradient(circle, #FFFFFF, #000000);
+    border-radius: 50%;
+    height: 200px;
+    transition: all 5s linear;
+    width: 200px;
+}
